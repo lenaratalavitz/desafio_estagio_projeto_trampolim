@@ -1,0 +1,72 @@
+body {
+	background-color:#b1d1fc;
+/*alterei o background-color que seria o fundo utilizando o mesmo processo para pesquisar a cor no google e testando para tom verde e depois testei com tom azul 	 */
+	color: #274156;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+
+.header__title {
+	text-align: center;
+}
+
+.main {
+	padding: 1rem;
+}
+
+.main__list {
+	display: grid;
+	grid-template-columns: repeat(3, 33%);
+/*alterei o valor de 1fr para repeat(3, 33%), fazendo com que a linha tenha 3 colunas, sendo que cada coluna tenha 33% da largura total da página 	 */
+	grid-gap: 1rem;
+	list-style: none;
+	padding: 0;
+}
+/*criei a classe second__list quase igual a classe main__list com a diferença que aqui tem apenas 1 coluna e uma margem para diferenciar essa seção das demais que tem na página  */
+.second__list{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 1rem;
+	list-style: none;
+	padding: 0;
+	margin:20px;
+	text-align: justify;
+}
+
+.main__text--color {
+	color: red;
+}
+
+.main__text--hex {
+	color: #ff0000;
+}
+
+.main__text--rgb {
+	color: rgb(255,0,0);
+}
+
+.card {
+	background-color: #fff;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+	padding: 1rem;
+	border-radius: 10px;
+/*adicionei o border-radius para criar uma borda arredondada com raio de 10px 	 */
+}
+
+.footer {
+	background-color: #1c6e8c;
+	bottom: 0;
+	left: 0;
+	position: float;
+/*alterei a posição de absolute para float, assim o rodapé foi para o final da página 	 */
+	padding: 1rem;
+	right: 0;
+	margin-top:40px;
+/* adicionei uma margem superior no rodapé para criar uma distância dos cards	 */
+}
+
+.footer__text {
+	color: #fff;
+	margin: 0;
+	text-align: center;
+}
